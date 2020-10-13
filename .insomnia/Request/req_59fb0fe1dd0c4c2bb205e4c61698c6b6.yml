@@ -1,12 +1,12 @@
 _id: req_59fb0fe1dd0c4c2bb205e4c61698c6b6
 type: Request
 parentId: wrk_949a4517d5184f6aa4821943d1cdac12
-modified: 1602595871145
+modified: 1602597072276
 created: 1602595861714
 url: http://localhost:3002/pets
-name: My Request
+name: POST to pets endpoint
 description: ""
-method: GET
+method: POST
 body: {}
 parameters: []
 headers: []

@@ -1,0 +1,10 @@
+_id: ut_92e48ebbbeaa49cf939f59a589dd145b
+type: UnitTest
+parentId: uts_f99d293adeb24604b129f1124fe12a00
+modified: 1602597083983
+created: 1602597011033
+requestId: req_59fb0fe1dd0c4c2bb205e4c61698c6b6
+name: Limit HTTP methods to spec
+code: |
+  const response = await insomnia.send();
+  expect(response.status).to.equal(405);
