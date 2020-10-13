@@ -1,7 +1,7 @@
 _id: spc_9f30e058e3544b7eb01a2085e94a9bc7
 type: ApiSpec
 parentId: wrk_949a4517d5184f6aa4821943d1cdac12
-modified: 1602587948487
+modified: 1602595781379
 created: 1591886983525
 fileName: Petstore
 contents: |-
@@ -12,7 +12,7 @@ contents: |-
     license:
       name: MIT
   servers:
-    - url: http://petstore.swagger.io/v1
+    - url: http://localhost:3002/
   paths:
     /pets:
       get:
@@ -40,20 +40,6 @@ contents: |-
               application/json:    
                 schema:
                   $ref: "#/components/schemas/Pets"
-          default:
-            description: unexpected error
-            content:
-              application/json:
-                schema:
-                  $ref: "#/components/schemas/Error"
-      post:
-        summary: Create a pet
-        operationId: createPets
-        tags:
-          - pets
-        responses:
-          '201':
-            description: Null response
           default:
             description: unexpected error
             content:
