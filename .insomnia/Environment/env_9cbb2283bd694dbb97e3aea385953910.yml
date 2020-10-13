@@ -1,0 +1,18 @@
+_id: env_9cbb2283bd694dbb97e3aea385953910
+type: Environment
+parentId: env_a2ac7bc93b3f9235e9120ced13dbbaafc712c37d
+modified: 1602608768147
+created: 1602608736044
+name: Kong env
+data:
+  scheme: http
+  base_path: ""
+  host: localhost:8000
+dataPropertyOrder:
+  "&":
+    - scheme
+    - base_path
+    - host
+color: null
+isPrivate: false
+metaSortKey: 1602608736044
