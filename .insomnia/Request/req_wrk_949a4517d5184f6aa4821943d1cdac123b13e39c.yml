@@ -1,9 +1,9 @@
 _id: req_wrk_949a4517d5184f6aa4821943d1cdac123b13e39c
 type: Request
 parentId: wrk_949a4517d5184f6aa4821943d1cdac12
-modified: 1602672603442
+modified: 1602694020666
 created: 1602596765389
-url: "{{ base_url }}/pets/{{ petId }}"
+url: "{{ base_url }}/pets/0"
 name: Info for a specific pet
 description: ""
 method: GET

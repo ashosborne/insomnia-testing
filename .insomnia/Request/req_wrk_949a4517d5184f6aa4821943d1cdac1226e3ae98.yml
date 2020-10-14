@@ -1,9 +1,9 @@
 _id: req_wrk_949a4517d5184f6aa4821943d1cdac1226e3ae98
 type: Request
 parentId: wrk_949a4517d5184f6aa4821943d1cdac12
-modified: 1602672603445
+modified: 1602693917485
 created: 1602596765391
-url: "{{ base_url }}/pets"
+url: "{{ base_url }}/pets/"
 name: List all pets
 description: ""
 method: GET
@@ -12,6 +12,7 @@ parameters:
   - name: limit
     disabled: true
     value: "0"
+    id: pair_68a7929869d346d699e5b48581f3b78c
 headers: []
 authentication: {}
 metaSortKey: -1602596765391
