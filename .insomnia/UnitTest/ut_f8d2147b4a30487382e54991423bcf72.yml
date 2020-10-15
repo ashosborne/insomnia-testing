@@ -1,12 +1,11 @@
 _id: ut_f8d2147b4a30487382e54991423bcf72
 type: UnitTest
 parentId: uts_f99d293adeb24604b129f1124fe12a00
-modified: 1602693531419
+modified: 1602694715862
 created: 1602693516823
 requestId: req_wrk_949a4517d5184f6aa4821943d1cdac1226e3ae98
 name: Limit requests to avoid DDoS
-code: |
+code: |+
   const response = await insomnia.send();
-  expect(response.headers).to.have.property('X-Rate-Limit-Limit');
-  expect(response.headers).to.have.property('X-Rate-Limit-Remaining');
-  expect(response.headers).to.have.property('X-Rate-Limit-Reset');
+  expect(response.headers).to.have.property('ratelimit-limit');
+
