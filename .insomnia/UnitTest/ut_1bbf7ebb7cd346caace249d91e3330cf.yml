@@ -1,15 +1,15 @@
 _id: ut_1bbf7ebb7cd346caace249d91e3330cf
 type: UnitTest
 parentId: uts_b84ba460bec841b8b4fb0965c826b6b3
-modified: 1602694273969
+modified: 1603207443289
 created: 1602693893577
 requestId: req_wrk_949a4517d5184f6aa4821943d1cdac123b13e39c
 name: /pets/0 returns Winston
 code: |
-  const response1 = await insomnia.send();
+  const response = await insomnia.send();
 
 
-  const body = JSON.parse(response1.data);
+  const body = JSON.parse(response.data);
 
   expect(body).to.have.property('id');
   expect(body).to.have.property('name');
